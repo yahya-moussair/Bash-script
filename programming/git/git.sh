@@ -56,6 +56,9 @@ initial () {
         git branch -M main
         git remote add origin https://github.com/yahya-moussair/$repoName.git
         git push -u origin main
+        git branch local
+        git switch local
+        git merge main
     else
         git init
         git add README.md
@@ -63,6 +66,9 @@ initial () {
         git branch -M main
         git remote add origin https://github.com/yahya-moussair/$repoName.git
         git push -u origin main
+        git branch local
+        git switch local
+        git merge main
     fi
 }
 
